@@ -7,7 +7,6 @@ require 'beanstream/exceptions'
 
 module Beanstream
 
-  @url_prefix = "www"
   @url_suffix = "tls12-api"
   @url_base = "na.bambora.com"
   @url_version = "v1"
@@ -23,7 +22,7 @@ module Beanstream
   end
 
   def self.api_host_url()
-    "https://#{@url_prefix}.#{url_base}"
+    "https://#{url_base}"
   end
 
   def self.api_base_url()
